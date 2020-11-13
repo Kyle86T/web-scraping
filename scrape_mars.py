@@ -122,7 +122,7 @@ def scrape():
     hemispheres_image_urls
 
     #Adding in the others in the dictionary
-    Mars_dictionary = {
+    mars_dictionary = {
         "latest_title": latest_content_title,
         "latest_paragraph": latest_paragraph,
         "featured_image_url": featured_image_url,
@@ -132,10 +132,9 @@ def scrape():
         # "title": "Schiaparelli Marineris Hemisphere", "img_url": schiaparelli_hemisphere_url,
         # "title": "Syrtis Major Hemisphere", "img_url": syrtis_hemisphere_url       
     }
-    Mars_dictionary
 
     # Close the browser after scraping
     browser.quit()
 
     # Return results
-    return Mars_dictionary
+    return mars_dictionary
