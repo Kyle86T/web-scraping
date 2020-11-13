@@ -12,7 +12,7 @@ def init_browser():
 #executable_path = {'executable_path': 'C:\webdrivers\chromedriver.exe'}
 #browser = Browser('chrome', **executable_path, headless=False)
 
-def scrape_info():
+def scrape():
     browser = init_browser()
 
     # Visit visitcostarica.herokuapp.com
