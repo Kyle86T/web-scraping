@@ -50,7 +50,7 @@ def scrape():
     featured_image_url = base_url + href
     featured_image_url
 
-    time.sleep(1)
+    time.sleep(2)
 
     mars_url = "https://space-facts.com/mars/"
     #Reading the facts table into Pandas 
@@ -61,7 +61,7 @@ def scrape():
     mars_facts_table=df_mars_table.to_html()
     mars_facts_table
 
-    time.sleep(1)
+    time.sleep(2)
 
     mars_hemisphere_url = "https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
     browser.visit(mars_hemisphere_url)
@@ -74,11 +74,11 @@ def scrape():
     hemisphere_base_url = 'https://astrogeology.usgs.gov'
     cerberus_hemisphere_url = hemisphere_base_url + cerberus_img
 
-    time.sleep(1)
+    time.sleep(2)
 
     mars_hemisphere_url = "https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
     browser.visit(mars_hemisphere_url)
-    browser.click_link_by_partial_text('Schiparelli')
+    browser.click_link_by_partial_text('Schiaparelli')
     browser.click_link_by_partial_text('Open')
     hemispheres_html = browser.html
     schiaparelli_soup = bs(hemispheres_html, 'html.parser')
@@ -87,7 +87,7 @@ def scrape():
     hemisphere_base_url = 'https://astrogeology.usgs.gov'
     schiaparelli_hemisphere_url = hemisphere_base_url + schiaparelli_img
 
-    time.sleep(1)
+    time.sleep(2)
 
     mars_hemisphere_url = "https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
     browser.visit(mars_hemisphere_url)
@@ -100,7 +100,7 @@ def scrape():
     hemisphere_base_url = 'https://astrogeology.usgs.gov'
     syrtis_hemisphere_url = hemisphere_base_url + syrtis_img
 
-    time.sleep(1)
+    time.sleep(2)
 
     mars_hemisphere_url = "https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
     browser.visit(mars_hemisphere_url)
