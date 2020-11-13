@@ -20,7 +20,7 @@
     <div class="row">
       <div class="col-md-12">
         <h2>Latest Mars News</h2>
-        <h5>{{item.Latest_title}}</h5>
+        <h5>{{item.latest_title}}</h5>
         <p>{{item.latest_paragraph}}</p>
         
       </div>
@@ -33,19 +33,19 @@
       </div>
         <div class="row">
           <h3>Mars Facts</h3>
-          <p> {{item.mars_facts_table | safe}} </p>
+          <p> {{item.mars_facts_table}} </p>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-6">
-        <img src = {{item.va_img_url}} height=500px width=500px>
+        <img src = {{item.valles_image_url}} height=500px width=500px>
         <p>Valles Marineris Hemisphere Enhanced</p>
         <p></p>
       </div>
       <div class="col-6">
-        <img src = {{item.ce_img_url}} height=500px width=500px>
+        <img src = {{item.cerberus_image_url}} height=500px width=500px>
         <p>Cerberus Hemisphere Enhanced</p>
       </div>
       <p></p>
@@ -53,12 +53,12 @@
 
     <div class="row">
       <div class="col-6">
-        <img src = {{item.sc_img_url}} height=500px width=500px>
+        <img src = {{item.schiaparelli_image_url}} height=500px width=500px>
         <p>Schiaperelli Hemisphere Enhanced</p>
         <p></p>
       </div>
       <div class="col-6">
-        <img src = {{item.sy_img_url}} height=500px width=500px>
+        <img src = {{item.syrtis_image_url}} height=500px width=500px>
         <p>Syrtis Major Hemisphere Enhanced</p>
         <p></p>
       </div>
